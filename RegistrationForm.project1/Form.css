@@ -1,0 +1,143 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Supermercado+One&display=swap');
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./bgImage.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main {
+        width: 60%;
+        border: 1px solid;
+        border-radius: 15px;
+        border: none;
+      }
+      form {
+        backdrop-filter: blur(10px);
+        
+      }
+
+      h1 {
+        text-align: center;
+        color:rgb(34, 22, 13);
+      }
+
+      .basicInfo {
+        margin: 5px;
+        padding: 10px;
+        font-weight: bold;
+      }
+      .basicInput {
+        height: 45px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #bba046;
+        border: none;
+        font-size: 20px;
+      }
+      ::placeholder {
+        font-size: 18px;
+        background-color: #bba046;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #bba046 inset !important;
+      -webkit-text-fill-color: black !important;
+    }
+      legend {
+        margin: 10px;
+        padding: 20px;
+        font-size: larger;
+        font-weight: bolder;
+      }
+      .legendcontent {
+        margin: 10px;
+        padding: 30px;
+        font-weight: bold;
+      }
+      #skills {
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 3px;
+        
+      }
+      .skillsInput {
+        margin: 30px;
+        
+      }
+      textarea {
+        width: 400px;
+        height: 100px;
+        border-radius: 10px;
+        display: block;
+        margin: 30px;
+        font-size: 20px;
+        background-color: #bba046;
+      }
+
+      button {
+        width: 60%;
+        height: 40px;
+        margin: 20px 0px 20px 150px;
+        font-size: large;
+        background-color: rgb(34, 22, 13);
+        transition: 0.5s;
+        color: rgb(216, 204, 194);
+        box-shadow: 10px 0 10px 10px #bba046;
+        
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button :hover {
+    
+        color: #fff;
+        transition: 0.5s;
+        
+      }
+      :in-range {
+        width: 700px;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+        accent-color: #d1b40c;
+      }
+      select {
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      #file {
+        padding: 20px 30px;
+        background-color: #bba046;
+        border-radius: 10px;
+      }
+      form .legendTime {
+        margin: 10px 25px;
+        font-weight: bold;
+        display: block;
+      }
+      .legendExperience {
+        margin: 30px 25px;
+        font-weight: bold;
+        display: block;
+      }
+      fieldset {
+        border-radius: 8px;
+        border-color: darkgoldenrod;
+      }
+      #acedamic {
+        background-color: #bba046;
+      }
+    

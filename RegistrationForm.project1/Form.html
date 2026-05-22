@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Registration Form</title>
+    <link rel="stylesheet" href="Form.css" />
+
+      </head>
+  <body>
+    <div class="main">
+      <form>
+        <h1>Student Registration Form</h1>
+
+        <div class="basicInfo">
+          <label class="basicInfo" name="fname">First Name:</label>
+          <input
+            class="basicInput"
+            type="text"
+            name="firstname"
+            placeholder="Enter your first name"
+            required
+          />
+        </div>
+
+        <div class="basicInfo">
+          <label class="basicInfo" for="lastname">Last Name:</label>
+          <input
+            class="basicInput"
+            type="text"
+            name="lastname"
+            placeholder="Enter your last name"
+            required
+          />
+        </div>
+        <div class="basicInfo">
+          <label class="basicInfo" for="email">Email:</label>
+          <input
+            class="basicInput"
+            type="email"
+            name="email"
+            placeholder="hfgr@gmail.com"
+            required
+          />
+        </div>
+        <div class="basicInfo">
+          <label class="basicInfo" for="password">password:</label>
+          <input
+            class="basicInput"
+            type="password"
+            name="pass"
+            placeholder="********"
+            required
+          />
+        </div>
+        <div class="basicInfo">
+          <label class="basicInfo" for="phone">Phone Number:</label>
+          <input
+            class="basicInput"
+            type="number"
+            name="phone"
+            placeholder="+92 866774347"
+            required
+          />
+        </div>
+        <div class="basicInfo">
+          <label for="dob">Date of Birth:</label>
+          <input class="basicInput" type="date" name="birth" required />
+        </div>
+        <fieldset>
+          <legend class="">Education details</legend>
+          <label class="legendcontent" for="qualification"
+            >Highest Qualification</label
+          >
+          <select name="qualification" id="acedamic">
+            <option value="select">Select</option>
+            <option value="matric">Matriculation</option>
+            <option value="inter">Intermediate</option>
+            <option value="bachelors">Bachelors</option>
+            <option value="msc">Masters</option>
+          </select>
+
+          <label class="legendcontent" for="study">field of Study</label>
+          <select name="study" id="acedamic">
+            <optgroup label="Computer Science">
+              <option value="Web">Web development</option>
+              <option value="AI/ML">AI/ML</option>
+              <option value="cyberg">Cyber Security</option>
+              <option value="quantam">Quantam Computing</option>
+              <option value="datascience">Data Science</option>
+            </optgroup>
+          </select>
+
+          <label class="legendcontent" id="skills" for="skills">Skills</label>
+          <input class="skillsInput" type="checkbox" name="html" />HTML 5
+          <input class="skillsInput" type="checkbox" name="css" />CSS
+          <input
+            class="skillsInput"
+            type="checkbox"
+            name="javascript"
+          />JavaScript
+          <input class="skillsInput" type="checkbox" name="reactjs" />ReactJS
+          <input class="skillsInput" type="checkbox" name="nodejs" />NodeJS
+        </fieldset>
+
+        <fieldset>
+          <legend>Uploads & Preferences</legend>
+          <label class="legendcontent" for="upload">Upload file</label>
+          <input id="file" type="file" />
+          <label class="legendTime" for="time">Available Time</label>
+          <input class="basicInput" type="time" />
+          <label class="legendExperience" for="Experience"
+            >Experience level</label
+          >
+          <input class="basicInput" type="range" min="0" max="10" id="slider" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label class="legendcontent" for="about">About Yourself:</label>
+          <textarea
+            rows="4"
+            id=""
+            placeholder="Write something about Yourself."
+          ></textarea>
+          <label class="legendcontent" for="agreement">Terms & Condition</label>
+          <input class="checkInput" type="checkbox" />I agree with the terms and
+          condition.
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
