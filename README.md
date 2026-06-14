@@ -237,7 +237,7 @@ A modern and professional Resume/CV webpage built using **HTML5** and **CSS3**. 
 
 Created as part of my Frontend Web Development Learning Journey 🚀
 
-### Image Here 📷 [!Modern Resume](ModernResume`Project.png)
+### Image Here 📷 ![Modern Resume](ModernResume`Project.png)
 
 # 🎓 Student Registration Form
 
