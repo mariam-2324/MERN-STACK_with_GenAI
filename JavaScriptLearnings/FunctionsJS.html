@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+
+    <script>
+// JAVASCRIPT IS A FUNCTIONAL BASED PROGRAMMING
+// FUNCTION DECLARATION
+function newFunction () {
+    console.log("WELCOME HERE..."); //output: WELCOME HERE
+}
+
+//CALLING FUNCTION
+function sayHi() {
+    console.log("Welcome again...");
+}
+sayHi();   //output : Welcome again...
+
+//FUNCTION WITH PARAMETERS
+function withParameter (name1) {
+    console.log("How are You..?" + withParameter);
+}
+withParameter("dear..!")   //output: How are You..?dear..!
+withParameter("my friend")   //output: How are You..?my friend
+
+
+// (a) SIMPLE FUNCTION WITH A PARAMETER
+        function greet(name) {
+            console.log(`Welcome ${name}!`);      
+        }
+        greet("Sara")
+
+
+// FUNCTION WITH MULTIPLE PARAMETERS
+function add (a, b) {
+    console.log(a + b);   
+}
+add(5, 5);
+add(4, 6);
+
+
+// RETURN KEYWORD WITHOUT RETURN
+// "return" sends a value back from the function
+
+function key (w, h) {
+    return (w * h);
+}
+let res = key(8, 8);
+console.log(res);   // output : 64
+
+
+// FUNCTION EXPRESSION
+//it stores a function in a variable
+
+const greet = function () {
+    console.log("Welcome");
+}
+greet()       //output : Welcome
+
+
+// SHORT ARROW FUNCTION
+const add = (e, g) => e + g;
+console.log(add(20, 10));     //output : 30
+
+
+// FUNCTION WITH DEFAULT PARAMETERS
+function grow(name1 = "guest") {
+    console.log("Hola" + name1);
+}
+grow();
+grow("friend")   // if forgot to give the argument below then it will send the default parameter passed above, otherwise, it uses the given value as argument.
+
+
+// ANONYMOUS FUNCTION
+
+const newTry = function () {
+    console.log("Come again");
+}
+// function () {  (this is a anonymous function)
+
+// }
+
+
+// IMMEDIATELY INVOKED FUNCITON EXPRESSION
+(function () {
+    console.log("'Welcome again");
+    
+}) ();     // output : Welcome again
+
+
+// SCOPE
+
+function test () {
+    let v = 10;
+    console.log(v);
+}
+test();
+console.log(v);    //output : 10   (ReferenceError 
+// Because x only exists inside the function. 
+// )
+
+
+// GLOBAL VARIABLE
+
+let b = 10;
+function test1 () {
+    console.log(b);  
+}
+test1 ();
+console.log(b);    // output : 10
+
+
+// NESTED FUNCTION
+
+function outer () {
+    console.log("outerGo");
+    function inner() {
+        console.log("INNER");
+        
+    }
+    inner();
+}
+outer();    // output : outerGo INNER
+
+
+
+
+
+
+
+
+        //  
+
+    </script>
+</body>
+</html>

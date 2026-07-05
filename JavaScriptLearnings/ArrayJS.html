@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array, Array Methods & Array of Objects</title>
+</head>
+<body>
+    
+
+    <script>
+        
+
+// Q-1 find cube of all these elements
+// if digits > 350 then minus 7 from it
+// use reduce to sum all filtered elements
+
+const digits = [8, 6, 9, 4, 23, 7, 5, 8];
+
+const cube = digits.map(digit => digit ** 3);
+const filteredMarks = cube.filter(digit => digit > 350)
+
+const subTotal = filteredMarks.map(digit => digit -= 7)
+
+const Total = subTotal.reduce((acc, val) => acc, val, 0)
+
+console.log(Total);
+
+
+// ===============ANSWER BY BLACK BOX=========
+// const totaldigits = digits
+//   .map((digi) => {
+//     const cube = digi ** 3;
+//     return digi > 350 ? cube - 7 : cube;
+//   })
+//   .reduce((acc, val) => acc + val, 0);
+
+// console.log(totaldigits);
+
+
+// FIND AVERAGE OF THE STUDENTS RESULT
+
+// const students = [
+//     {
+//         name : "abc",
+//         marks : 90
+//     },
+//     {
+//         name : "def",
+//         marks : 78
+//     },
+//     {
+//         name : "ghi",
+//         marks : 78
+//     }
+// ]
+
+// const totalMarks = students.reduce((acc, val) => acc + val.marks, 0)
+// const avg = totalMarks/students.length;
+// console.log(avg);
+
+
+const foods = [
+    {
+        Name : "Zinger Burger",
+        Category : "Non-Veg",
+        Price : 700,
+    },
+    {
+        Name : "Pasta",
+        Category : "Non-Veg",
+        Price : 600,
+
+    },
+    {
+        Name : "Mix VeggiePot",
+        Category : "Veg",
+        Price : 500,
+    },
+    {
+        Name : "Hot Veggies",
+        Category : "Veg",
+        Price : 600,
+    }
+]
+
+// const lineUP = foods.map((food) => {
+//     console.log(food);
+// })
+//ONE LINER CODE BELOW; WITH MAP METHOD
+
+    // const total = foods.filter(food => food.Category === "Non-Veg").map(Famfood => Famfood).reduce((acc, val) => acc + val.Price,0)
+    // console.log(total);
+
+
+    //WITHOUT MAP METHOD
+    // NO NEED TO PRINT BY MAP FUNCTION AS ITS ALREADY PRINTING THE ITEMS 
+
+    const finalTotal = foods.filter((food) => food.Category === "Non-Veg").reduce((acc, val) => acc + val.Price, 0)
+    console.log(finalTotal);
+    
+    
+// PUSH METHOD
+const num = [4, 6, 7, 9];
+num.push()
+console.log();
+
+
+ // POP METHOD
+ const num1 = [4, 6, 7, 9];
+num1.pop()
+console.log(num1);
+
+//AT METHOD
+const num2 = [4, 6, 7, 9];
+num.push()
+console.log();
+// LENGTH METHOD
+const num3 = [4, 6, 7, 9];
+num.push()
+console.log();
+//SHIFT METHOD
+const num4 = [4, 6, 7, 9];
+num.push()
+console.log();
+//UNSHIFT METHOD
+const num5 = [4, 6, 7, 9];
+num.push()
+console.log();
+
+//SPREAD METHOD (OPERATOR)
+
+const arr1 = [3, 4, 5];
+const arr2 = [4, 6, 7];
+const arr3 = [...arr1, ...arr2]
+console.log(arr3);
+
+//CONCAT METHOD
+const arr4 = [3, 4, 5];
+const arr5 = [4, 6, 7];
+const res = arr4.concat(arr5);
+console.log(res);
+
+
+// STRING TO CONVERT IN ARRAY
+
+const word = "javascript";
+
+console.log(word.split(""));    //output : ["j" "a" "v" "a" "s" "c" "r" "i" "p" "t"]
+
+//if we split it in a space like "split(" ")" this, then
+
+const word1 = "javascript is programming"
+console.log(word.split(" "));     //output : ['javascript', 'is', 'programming']
+
+
+// IF WE WANT IT SPLITED WITH A LETTER 'A' THEN
+const word2 = "javascript"
+
+console.log(word2.split("a"));
+
+// JOIN METHOD
+
+const anothWord = ["A", "B", "C"];
+console.log(anothWord.join("-"));  //output: "A-B-C"
+
+
+
+// &%$@$&%&%@%&%&%&@@@@%&%&@@@%&%&@@@   (its called Buffer Data) and it can be converted to string by .string method
+
+
+const marks = [67, 89, 90, 70, 59, 79]
+console.log(marks.slice(0, 3));   //0 se start karo or 3 item tak jaoo   [67, 89, 90]-output
+
+// SPLICE METHOD
+marks.splice(2, 2, 6)  //2 index se start karo, 2 k baad jo 2 items hain unhain delete karo, or 6 figure ko delete items ki jagah add karo. OUTPUT [67, 89, 6, 59, 79]
+
+
+
+// LAST INDEX OF METHOD
+
+const marked = [2, 4, 6, 8];
+console.log(marked.lastIndexOf(8));    //OUTPUT : 3
+
+
+//
+const marked1 = [2, 4, 6, 8];
+console.log(marked1.includes(6));  //OUTPUT : true
+
+// SORT METHOD
+
+const fruits = ["banana", "Apple", "Kiwi", "Peach"];
+console.log(fruits.sort());   // OUTPUT : ["Apple", "banana", "Kiwi", "Peach"] sorts alphabatecally
+
+// FIND METHOD
+const marked2 = [28, 44, 65, 87];
+const res1 = marked2.find(num => num > 60)
+
+console.log(res1);    //OUTPUT : [28, 44]
+
+
+// FIND INDEX METHOD
+//find index of the matched element/item
+
+// EVERY METHOD
+//FLAT METHOD
+//combines all sub arrays into one single array.
+//FILL METHOD
+// ARRAY.IsARRAY METHOD
+// returns true or false that if its an array or not
+
+//ARRAY OF METHOD
+//returns a (3,4,5,6,7) into [3,4,5,6,7] array bracket.
+
+
+
+    </script>
+</body>
+</html>

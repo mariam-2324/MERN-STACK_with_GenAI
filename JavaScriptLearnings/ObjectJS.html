@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects & Array of Objects</title>
+</head>
+<body>
+    
+<!-- we can get these items via for loop, for each, for of, map, filter, reduce . -->
+
+
+    <script>
+
+        // ======PRINTING WITH SINGLE VALUE
+        let bio = {
+            name : "Sara",
+            age : 35,
+            hobbies : ["travelling", "reading", "indoor-games"],
+            address : {
+                sector : "F-12",
+                City : "Karachi"
+            }
+         }
+         console.log(bio.hobbies);
+
+
+         // =======PRINTING WITH MULTIPLE VALUES
+         const product = {
+            img : "dummy.img",
+            title : "T.shirt",
+            ratings : "*****",
+            sellingHistory : 78,
+            oldPrice : 67,
+            newprice : 59
+         }
+         console.log(product.title, product.ratings);
+
+
+         // ===============ARRAY OF OBJECTS
+         const newProducts = [
+            {
+                title : "Exotic",
+                category : "perfume",
+                color : "black",
+                price : 2000,
+                stocks : 6
+            },
+            {
+                title : "Coat shoes",
+                category : "dressing",
+                color : "blue",
+                price : 23000,
+                stocks : 5
+            },
+            {
+                title : "Lawn Suits",
+                category : "dressing",
+                color : "blue",
+                price : 5000,
+                stocks : 8
+            }
+         ]
+         console.log(newProducts);
+
+        // PRINTING SPECIFIC ITEM WITH ONLY INDEX OF OBJECT
+         console.log(newProducts[1].price, newProducts[1].color);
+         
+         
+         //====================PRINTING ITEMS VIA FOR LOOP AS WELL.
+
+         for (let product of newProducts) {
+            console.log(product.title, product.price, product.category, product.stocks);
+            
+         }
+         
+
+         //=====================ETTING ITEMS VIA MAP METHOD
+
+         newProducts.map((product) => {
+            return product
+         })
+         console.log(newProducts);
+         
+
+         //===============GETTING SPECIFIC ITEMS VIA FILTER METHOD
+
+         const arrivals = newProducts.filter((product) => {
+            return product.color === "blue"
+         })
+         console.log(arrivals);
+
+
+         //================ONE LINER CODE IN FILTER AND MAP METHOD
+
+         const total = newProducts.filter(product => product.color === "blue").reduce((acc, val) => acc + val.price, 0)
+
+         console.log(`The total amount of your item is ${total}`);
+         
+         
+
+         // USE MAP METHOD HERE....Map ka kaam hota hai har element ko transform (badalna) aur ek naya array banana. Agar aap sirf prices nikalna chahte hain to , Yahan map() har object ko sirf uski price mein transform kar raha hai.
+         const prices = newProducts.map(product => product.price);
+         console.log(prices);
+
+    </script>
+</body>
+</html>

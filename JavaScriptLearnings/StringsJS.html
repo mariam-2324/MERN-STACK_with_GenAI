@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-learning</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+<script>
+
+// INTRO FUNCTIONS OF STRING
+    let mine = "laptop"
+    console.log(mine);
+    console.log(typeof(mine[0]));
+    console.log(mine.length);
+
+//FOR TAKING CHARACTERS LINE BY LINE
+for(let i = 0; i <= mine.length -1; i++) {
+    console.log(mine[i]);
+}
+
+// CHARAT METHOD
+
+console.log(mine.charAt[2]);  //output: p "gives character at lies on the given index"
+
+//CONCAT CHARACTERS
+
+    // let do = "learning";
+    // let work = "javascript";
+
+    // console.log(do.concat(work));
+
+
+     // AT METHOD  (giving the same output like charAT but (-1) is for reversing the characters inoutput)
+     let do1 = "learning";
+
+    console.log(do1.at(-1));
+
+    //SLICE METHOD    (start cutting from that figure till that figure, like that...)
+    let d = "drive";
+    console.log(d.slice(3,3));
+    
+    //substr method
+    let y = 'driving';
+    console.log(y.substr(2,5));
+
+    //LOWER CASE LETTER
+    let l = "SHAH JAHAN";
+    console.log(l.toLowerCase());
+
+    //TRIM METHOD
+    let t = "triming"
+    console.log(t.trim());
+
+    //TRIMSTART
+    let trim = " start";
+    console.log(trim.trimStart());
+
+    //PAD START METHOD
+    let p = "5";
+    console.log(p.padStart(3, "0"));   //output: 005, its useful for IDs (e.g - 1--001, 5--005, 25--025)
+
+    //PAD END METHOD
+    let e = "5";
+    console.log(e.padEnd(3, "0"));   //output: 500, its joined the 00 after the figures
+
+    // REPEAT METHOD
+    let u = "repeat";
+    console.log(u.repeat(3));    //output: repeat repeat repeat....repeats the string as many times as we give the figure in the method.
+
+    // REPLACE METHOD
+    let repl = "I like cats";
+    console.log(repl.replace("cats", "kittens"));
+
+    //REPLACE ALL METHOD
+    let replall = "I like cats cats";
+    console.log(replall.replaceAll("cats", "kittens"));  //output: "I like kittens kittens"  (it replaces all similiar characters)
+
+
+
+
+    let h = "javascript";
+
+    for (i = 0; i <= h.length -1; i++){
+        if(i === "a" || i === "i"){
+            console.log(i);
+            break;
+            
+        } else{
+            console.log("You didn't find vowels");
+            
+        }
+    }
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+    
+    // 1- FOR OF ; LOOP
+    //its automatically moves forward and no need to sign end points.
+    // let myString = "javaScript";
+    // for (let n of name) {
+    //     console.log(n);
+    // }
+
+    // 2-
+    // traditionally we use singular form of the particular array variable, e.g (product of products).
+    // let products = "car watch perfume";
+    // for (let product of products) {
+    //     console.log(product);
+        
+    // }
+
+    // 2-(a) FOR IN LOOP
+    // using for printing index along with characters
+
+    // let products = "car watch perfume";
+
+    // for (let index in products) {
+    //     console.log(index, products[index]);     
+    // }
+
+// 3- FOR EACH LOOP
+// its takes anoynymous function 
+
+let products1 = ["car", "watch", "perfume"];
+products1.forEach(product => {
+    console.log(product);
+});
+
+
+
+
+ </script>
+</body>
+</html>
