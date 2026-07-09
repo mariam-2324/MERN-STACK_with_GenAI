@@ -1,6 +1,22 @@
 body {
-    background-color: rgb(22, 22, 97);
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.winner-BG {
+    background-image: url("./Tic-Tac-ToeBackSuccess.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .board{
@@ -11,9 +27,9 @@ body {
     grid-template-rows:repeat(3,1fr);
     margin:100px 0 50px 300px;
     text-align: center;
+    font-size: 100px;
     color: white;
-    font-size: larger;
-}
+    }
 
 
 #div1,
